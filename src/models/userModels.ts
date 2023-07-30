@@ -15,20 +15,19 @@ const userSchema = new mongoose.Schema({
     required: [true, 'Password is required'],
   },
   role: {
-    type: {
-      type: String,
-      enum: [
-        'administrator',
-        'doctor',
-        'nurse',
-        'accountant',
-        'receptionist',
-        'pharmacist',
-        'patient',
-        'laboratorist',
-      ],
-    },
+    type: String,
+    enum: [
+      'administrator',
+      'doctor',
+      'nurse',
+      'accountant',
+      'receptionist',
+      'pharmacist',
+      'patient',
+      'laboratorist',
+    ],
   },
+
   isVerified: {
     type: Boolean,
     default: false,

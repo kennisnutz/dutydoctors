@@ -39,6 +39,7 @@ export async function POST(request: NextRequest) {
     }
     //create session token
     const tokenData = {
+      fullName: user.fullName,
       id: user._id,
       email: user.email,
       role: user.role,
